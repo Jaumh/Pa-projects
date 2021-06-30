@@ -1,6 +1,6 @@
 Algoritmo "par ou impar"
-// 
-//  
+// pa 
+// cintia 
 // Descrição   : Aqui você descreve o que o programa faz! (função)
 // Autor(a)    : Nome do(a) aluno(a)
 // Data atual  : 13/05/2021
@@ -14,11 +14,16 @@ Inicio
 //entrada
 escreval("digite seu valor")
 leia(num)
+se((num mod 2) =0) entao
+ escreval("-------------------------|")
+ escreval("|",num,"|este numero é par    |")
+ escreval("-------------------------|")
+ fimse
+se((num mod 2) =1)entao
+ escreval("-------------------------|")
+ escreval("|",num,"|este numero é impar  |")
+ escreval("-------------------------|")
+ fimse
 
-par <- (num mod 2) =0
-impar <- (num mod 2) =1
-
-escreval("par:",par)
-escreval("impar:",impar)
 
 Fimalgoritmo

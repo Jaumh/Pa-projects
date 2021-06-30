@@ -1,31 +1,50 @@
 Algoritmo "banco"
-// pa
+// pa 
 // cintia 
 // Descrição   : Aqui você descreve o que o programa faz! (função)
 // Autor(a)    : Nome do(a) aluno(a)
 // Data atual  : 14/05/2021
 Var
 //variaveis
-saque,saldoatual,saldofinal,sobra:real
-positivo,negativo:logico
+saque,saldoatual,saldofinal,sobra,dinheiro,deposito:real
+
 
 
 Inicio
 //entrada
-escreval ("saque na conta e saldo restante")
+escreval ("-------------------------------|")
+escreval ("saque na conta e saldo restante|")
+escreval ("-------------------------------|")
 saldoatual <- 25000
-escreval("quantos reais você quer sacar?")
-leia(saque)
+escreval(" SE você quer sacar digite 1 e depositar 2")
+leia(dinheiro)
 
-saldofinal <-saldoatual-saque
+se (dinheiro=1)entao
+    escreval("quanto quer sacar?")
+    leia(saque)
+se (saque>saldoatual)entao
+       escreval ("-------------------------------------------------------|")
+       escreval("você não pode sacar um numero maior do que tem na conta|")
+       escreval ("-------------------------------------------------------|")
+senao
+    saldofinal <- saldoatual-saque
+    escreval ("------------------------------------------|")
+    escreval ("você sacou",saque," e ficou com",saldofinal,"          |")
+    escreval ("------------------------------------------|")
+fimse
+fimse
+se (dinheiro=2) entao
+   escreval("quanto quer depositar?")
+    leia(deposito)
+    saldofinal <- saldoatual+deposito
+    escreval("--------------------------------------------------|")
+    escreval ("você depositou",deposito," e ficou com",saldofinal,"              |")
+    escreval("--------------------------------------------------|")
 
-positivo<-(saldofinal>=0)
-negativo<-(saldofinal<0)
-sobra<-saldofinal
-escreval("seu saldo final é negativo?",negativo)
-escreva("seu saldo final é positivo?",positivo)
-escreval("-----------------------------------")
-escreval("sobrou",sobra," na sua conta depois do saque")
+fimse
+    
+
+
 
 
 Fimalgoritmo

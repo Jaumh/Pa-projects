@@ -1,5 +1,5 @@
 Algoritmo "imc"
-// pa
+// pa 
 // cintia 
 // Descrição   : Aqui você descreve o que o programa faz! (função)
 // Autor(a)    : Nome do(a) aluno(a)
@@ -16,20 +16,27 @@ escreval("qual seu peso")
 leia(peso)
 escreval("qual sua altura")
 leia (altura)
-
 imc <-(peso/(altura*altura))
-abaixo <-(imc <=18.5)
-ideal <-((imc >18.5)e (imc <=24))
-acima <- ((imc >24) e (imc <=29))
-obgrau1 <-((imc >30)e (imc <=34))
-obgrau2 <- ((imc >34)e (imc <=39))
-obgrau3 <- (imc >40)
-escreval("abaixo:",abaixo)
-escreval("ideal:",ideal)
-escreval("acima:",acima)
-escreval("obgrau1:",obgrau1)
-escreval("obgrau2:",obgrau2)
-escreval("obgrau3:",obgrau3)
+se(imc <=18.5) entao
+escreval("você esta abaixo do peso")
+fimse
+se(((imc >18.5)e (imc <=24))) entao
+escreval("você esta no seu peso ideal")
+fimse
+se(((imc >24) e (imc <=29))) entao
+escreval("você esta acima do peso")
+fimse
+se(((imc >30)e (imc <=34))) entao
+escreval("você esta com obesidade 1")
+fimse
+se(((imc >34)e (imc <=39))) entao
+escreval("você esta com obesidade 2")
+fimse
+se((imc >40)) entao
+escreval("você esta com obesidade 3")
+fimse
+
+
 
 
 Fimalgoritmo

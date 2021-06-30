@@ -1,5 +1,5 @@
 Algoritmo "volei"
-// pa
+// pa 
 // cintia 
 // Descrição   : Aqui você descreve o que o programa faz! (função)
 // Autor(a)    : Nome do(a) aluno(a)
@@ -7,7 +7,7 @@ Algoritmo "volei"
 Var
 //variaveis
 altura,idade:real
-competir:logico
+
 
 
 Inicio
@@ -16,8 +16,12 @@ escreval("qual sua altura:")
 leia(altura)
 escreval("qual sua idade")
 leia(idade)
-competir <- (altura >1.75)e(idade >18)
-escreval("vc pode competir?",competir)
+se((altura >1.75)e(idade >18)) entao
+escreval("vc pode competir")
+senao
+ escreval("vc  nao pode competir")
+ fimse
+
 
 
 
